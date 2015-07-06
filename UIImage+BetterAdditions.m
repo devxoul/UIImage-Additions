@@ -132,8 +132,8 @@ static NSString * kUIImageSize = @"kUIImageSize";
     
     CGFloat borderWidth = [borderAttributes[NSStrokeWidthAttributeName] floatValue];
 
-    CGSize size = CGSizeMake(MAX(cornerInset.topLeft, cornerInset.bottomLeft) + MAX(cornerInset.topRight, cornerInset.bottomRight) + borderWidth * 2 + 1,
-                             MAX(cornerInset.topLeft, cornerInset.topRight) + MAX(cornerInset.bottomLeft, cornerInset.bottomRight) + borderWidth * 2 + 1);
+    CGSize size = CGSizeMake(MAX(cornerInset.topLeft, cornerInset.bottomLeft) + MAX(cornerInset.topRight, cornerInset.bottomRight) + borderWidth * 2 + [UIScreen mainScreen].scale * 2,
+                             MAX(cornerInset.topLeft, cornerInset.topRight) + MAX(cornerInset.bottomLeft, cornerInset.bottomRight) + borderWidth * 2 + [UIScreen mainScreen].scale * 2);
     
     UIEdgeInsets capInsets = UIEdgeInsetsMake(MAX(cornerInset.topLeft, cornerInset.topRight) + borderWidth,
                                               MAX(cornerInset.topLeft, cornerInset.bottomLeft) + borderWidth,
