@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "UIImage+BetterAdditions"
-  s.version      = "2.0.2"
+  s.version      = "2.0.3"
   s.summary      = "Adding methods to generate dynamically images from colors, borders, adding corner radius, tinting images, etc."
 
   s.description  = <<-DESC
@@ -22,4 +22,5 @@ Pod::Spec.new do |s|
   s.source_files = 'UIImage+BetterAdditions.{h,m}'
   s.framework  = 'UIKit'
   s.requires_arc = true
+  s.deprecated_in_favor_of = 'SwiftyImage'
 end
